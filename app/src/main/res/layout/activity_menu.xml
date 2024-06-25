@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DAE5EB"
+    tools:context=".ui.main.MenuActivity">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5CB0DF"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reservatec_title"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <!-- Background Section with User Info -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/backgroundUser"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_avatar"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/ivUserAvatar"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERA GOMEZ, YAHIR GABRIEL"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_below="@id/ivUserAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yahir.vera@tecsup.edu.pe"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:layout_below="@id/tvUserName"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <!-- Menu Options Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/home"
+                android:contentDescription="@string/home_icon"
+                android:padding="8dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/reservas"
+                android:contentDescription="@string/reservations_icon"
+                android:padding="8dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/tvReservations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mis reservas"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logout"
+                android:contentDescription="@string/logout_icon"
+                android:padding="8dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar sesión"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

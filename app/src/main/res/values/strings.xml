@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Reservatec1</string>
+    <string name="reservatec_title">RESERVATEC</string>
+    <string name="campo_1">CAMPO 1</string>
+    <string name="campo_2">CAMPO 2</string>
+    <string name="campo_3">CAMPO 3</string>
+    <string name="campo_4">CAMPO 4</string>
+    <string name="home_icon">Home icon</string>
+    <string name="reservations_icon">Reservations icon</string>
+    <string name="menu_icon">Menu icon</string>
+    <string name="logout_icon">Logout icon</string>
+    <string name="ver_disponibilidad">VER DISPONIBILIDAD</string>
+</resources>
